@@ -37,7 +37,7 @@ def pbf_to_mkv(input_file, output_file):
 
 ############# 合并章节名
         
-        chapters.append((f'CHAPTER{num}={time_str}', f'CHAPTER01NAME={content}'))
+        chapters.append((f'CHAPTER{num}={time_str}', f'CHAPTER{num}NAME={content}'))
 
 ############# 写入OGM风格的简易章节文件
         with open(output_file, 'w', encoding='utf-8') as f:
